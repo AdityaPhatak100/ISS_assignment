@@ -1,0 +1,15 @@
+What is Normalization?
+
+In simple terms, normalization of storage of data in a simplified form to avoid
+data redundancy and prevent occurance of various anomalies (insertion, deletion 
+and updation)
+
+The normal form types are:
+1NF - must only contain atomic values. There should not be multiple values in
+	the same cell.
+2NF - non-key attributes are fully function dependent on the primary key. These 
+	are stored in a separate table
+3NF - partial dependency between non-prime and key attributes must be removed
+	and stored in separate tables
+4NF - tables separated according to their functional dependencies
+5NF - database is broken into as many tables as possible to remove data redundancy

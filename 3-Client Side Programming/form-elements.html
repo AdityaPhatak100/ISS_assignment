@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Form elements</h1>
+    <table border="2">
+        <tr>
+    <td><div>
+      <h3>Label</h3>
+      <input type="text" name="temp" id="temp" />
+      <label for="temp">Example Label for Input</label>
+    </div></td>
+    <td><div>
+      <h3>Select</h3>
+      <label for="grades">Grades</label>
+      <select id="cars" name="cars">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+    </div></td>
+    <td><div>
+      <h3>Text Area</h3>
+      <textarea name="area" id="area" cols="30" rows="10"></textarea>
+    </div></td>
+        </tr>
+        <tr>
+    <td><div>
+      <h3>Button</h3>
+      <button type="button">BUTTON</button>
+      <button disabled="disabled">DISABLED</button>
+      <button type="reset">RESET</button>
+      <button type="submit">SUBMIT</button>
+    </div></td>
+    <td><div>
+      <h3>Fieldset + Legend</h3>
+      <fieldset style="display: inline-block">
+        <legend>User Data</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </div></td>
+    <td><div>
+      <h3>Datalist + Option</h3>
+      <input list="editors" />
+      <datalist id="editors">
+        <option value="VS Code"></option>
+        <option value="Eclipse"></option>
+        <option value="NeoVim"></option>
+        <option value="IntelliJ"></option>
+      </datalist>
+    </div></td>
+        </tr>
+        <tr>
+    <td><div>
+      <h3>Output</h3>
+      <form oninput="answer.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" name="a" placeholder="Enter number" />
+        +
+        <input type="number" id="b" name="b" value="10" />
+        =
+        <output name="answer" for="a b"></output>
+      </form>
+    </div></td>
+    <td><div>
+      <h3>Opt Group</h3>
+      <label for="food">Choice of meal</label>
+      <select name="food" id="food">
+        <optgroup label="Mexican">
+          <option value="burrito">Burrito</option>
+          <option value="camote">Camote</option>
+        </optgroup>
+        <optgroup label="Chinese">
+          <option value="chowmein">Chow Mein</option>
+          <option value="springroll">Spring Rolls</option>
+          <option value="noodles">Noodles</option>
+        </optgroup>
+      </select>
+    </div></td>        
+        </tr>
+    </table>
+
+
+
+  </body>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    h1 {
+      margin: 0.5rem;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    td {
+      text-align: center;
+      height: 10rem;
+      width: 100rem;
+      border: 2px dashed grey;
+    }
+
+    table {
+      margin: 1rem;
+      border: 3px solid black;
+    }
+
+  </style>
+</html>

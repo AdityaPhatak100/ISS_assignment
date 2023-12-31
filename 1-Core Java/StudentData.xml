@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+    <students>
+        <student>
+            <id>1</id>
+            <name>Aditya</name>
+            <grade>10</grade>
+            <address>
+                <city>Mumbai</city>
+                <zipcode>400001</zipcode>
+            </address>
+            <contact>
+                <email>aditya@temp.com</email>
+                <phone>1223344556</phone>
+            </contact>
+        </student>
+        <student>
+            <id>2</id>
+            <name>Ajay</name>
+            <grade>9</grade>
+            <address>
+                <city>Pune</city>
+                <zipcode>500001</zipcode>
+            </address>
+            <contact>
+                <email>ajay@temp.com</email>
+                <phone>9887766554</phone>
+            </contact>
+        </student>
+    </students>
+</school>
